@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: grid;
+    place-items: center;
+    padding: 2rem 1.25rem;
+    background-color: #16104a;
+    background-image: radial-gradient(#5146a5 1.5px, transparent 1.5px);
+    background-size: 18px 18px;
+    color: #171047;
+    font-family: "Courier New", Courier, monospace;
+}
+
+.counter-page {
+    width: min(100%, 34rem);
+    padding: clamp(1.5rem, 7vw, 3rem);
+    border: 4px solid #171047;
+    background: #fffde7;
+    box-shadow: 10px 10px 0 #ff4fa3, 16px 16px 0 #25e6cf;
+    text-align: center;
+}
+
+header {
+    margin-bottom: 2rem;
+}
+
+.eyebrow,
+.count-label,
+footer {
+    color: #4535a1;
+    font-size: 0.75rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+}
+
+.eyebrow {
+    display: inline-block;
+    margin: 0 0 1rem;
+    padding: 0.45rem 0.65rem;
+    border: 2px dashed #ff4fa3;
+    background: #ffe1f0;
+}
+
+h1 {
+    margin: 0;
+    color: #ed238c;
+    font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+    font-size: clamp(2.5rem, 11vw, 4rem);
+    font-weight: 900;
+    line-height: 0.98;
+    text-shadow: 3px 3px 0 #ffdc3e;
+}
+
+.subtitle {
+    margin: 1rem 0 0;
+    color: #4535a1;
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+.counter-card {
+    padding: 1.5rem 1rem;
+    border: 3px solid #171047;
+    background: #d9fff7;
+    box-shadow: inset 0 0 0 4px #fff;
+}
+
+.count-label {
+    margin: 0;
+    color: #148a79;
+}
+
+.count {
+    min-height: 7rem;
+    margin: 0.5rem 0 1.25rem;
+    display: grid;
+    place-items: center;
+    color: #171047;
+    font-size: clamp(4rem, 18vw, 5.5rem);
+    font-variant-numeric: tabular-nums;
+    font-weight: 700;
+    text-shadow: 3px 3px 0 #ffdc3e;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+button {
+    width: 4rem;
+    height: 4rem;
+    border: 3px solid #171047;
+    border-radius: 0.4rem;
+    background: #ffdc3e;
+    box-shadow: 4px 4px 0 #171047;
+    color: #171047;
+    cursor: pointer;
+    font: inherit;
+    font-size: 1.8rem;
+    font-weight: 700;
+    transition: transform 100ms ease, box-shadow 100ms ease;
+}
+
+.plusbtn {
+    background: #ff4fa3;
+    color: #fff;
+}
+
+button:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0 #171047;
+}
+
+button:active {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 #171047;
+}
+
+button:focus-visible {
+    outline: 3px dashed #4535a1;
+    outline-offset: 5px;
+}
+
+footer {
+    margin-top: 2rem;
+    color: #ed238c;
+}
+
+@media (max-width: 25rem) {
+    .counter-page {
+        padding: 1.5rem 1rem;
+    }
+}
